@@ -1,0 +1,204 @@
+:root{
+    --nav: #fdfff7;
+    --body: #fffffb;;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+
+@media (max-width: 400px) {
+body{
+background: var(--body);
+}
+.paragraph{
+    text-align: center;
+        display: flex;
+        padding: 20px 0 0 0;
+        margin: 25px 35px 0 35px;
+        font-family: 'Lucida Sans', sans-serif;
+        font-size: 17px;
+        color: #717273;
+}
+h2{
+    font-family: "Changa One", sans-serif;
+        font-weight: normal;
+        color: fff;
+        letter-spacing: 2px;
+        position: relative;
+        margin: 0 0 0 70px;
+        font-size: x-large;
+        text-shadow: 0px 0px 20px #1896df;
+}
+.navbar{
+ width: 393px;
+        height: 50px;
+        padding: 13px 0 15px 0;
+      
+        position: sticky;
+        background: #291284;
+}
+/* From Uiverse.io by JulanDeAlb */ 
+.hamburger {
+  cursor: pointer;
+}
+
+.hamburger input {
+  display: none;
+}
+
+.hamburger svg {
+  height: 40px;
+        margin: -31px 0 0 20px;
+  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line {
+  fill: none;
+  stroke: white;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3;
+  /* Define the transition for transforming the Stroke */
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+              stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line-top-bottom {
+  stroke-dasharray: 12 63;
+}
+
+.hamburger input:checked + svg {
+  transform: rotate(-45deg);
+}
+
+.hamburger input:checked + svg .line-top-bottom {
+  stroke-dasharray: 20 300;
+  stroke-dashoffset: -32.42;
+}
+
+
+/* From Uiverse.io by TCdesign-dev */ 
+#bottone1 {
+  width: 280px;
+        height: 50px;
+
+      margin: 60px 50px 0 55px;
+        border-radius: 9px;
+        background: #d97217;
+        border: none;
+        font-family: sans-serif;
+        text-align: center;
+        cursor: pointer;
+}
+#bottone2{
+  width: 280px;
+        height: 50px;
+      margin: 12px 50px 0 55px;
+        border-radius: 9px;
+        background: #d97217;
+        border: none;
+        font-family: sans-serif;
+        text-align: center;
+        cursor: pointer;
+
+}
+
+
+/*content*/
+
+/* From Uiverse.io by akshat-patel28 */ 
+.card {
+  display: flex;
+        flex-direction: column;
+        width: 320px;
+        height: 280px;
+        max-height: 330px;
+        background-color: var(--white);
+        border-radius: 10px;
+        box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.08), -4px -4px 12px rgba(0, 0, 0, 0.08);
+        overflow: hidden;
+        margin: 70px 0 0 35px;
+        transition: all 0.3s;
+        cursor: pointer;
+        box-sizing: border-box;
+        padding: 10px;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1),
+    -4px -4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card-image-container {
+  width: 50%;
+  height: 64%;
+  object-fit: cover;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url('https://image.made-in-china.com/2f0j00ydutRFvMyAch/Hand-Tools-1-100mm-Cr-V-Steel-Cross-Phillips-Head-Screwdriver.jpg');
+  border-radius: 10px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  background-color: rgb(165, 165, 165);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-icon {
+  font-size: 40px;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 17px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  color: #1797b8;
+  cursor: default;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+}
+
+.card-des {
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  margin: 0;
+  font-size: 13px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #1797b8;
+  cursor: default;
+}
+
+
+
+
+
+}
+
